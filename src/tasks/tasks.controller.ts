@@ -34,7 +34,6 @@ export class TasksController {
   @Post()
   createTask(@Body() createTaskDto: CreateTaskDto): Task {
     const res = this.tasksService.createTask(createTaskDto);
-    console.log(res);
     return res;
   }
 
